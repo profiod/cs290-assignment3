@@ -13,7 +13,9 @@
 */
 
 //your code here
-
+function uselessFunction() {
+	return null; 
+}
 //end your code
 
 var bar = 'not a function';
@@ -30,7 +32,26 @@ var barType = typeof bar;
 */
 
 //your code here
+var i;	// counter 
+var success = false;	// used to store if an operation was successful 
 
+// double the array element, if successful success = true otherwise success is false
+bar = function (doubleArray) {
+	for(i = 0; i < doubleArray.length; i++)
+	{
+		if ((doubleArray[i] *= 2))
+		{
+			success = true; 
+		} 
+		else 
+		{
+			success = false; 
+			break; 
+		}
+	} 
+
+	return success; 
+}
 //end your code
 
 /**
@@ -66,5 +87,42 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+var j; 	// counter
+var idxBegMsg, idxEndMsg;	// used to store beginning and end of message
+var idxEndHash; 	// used to store end of hash 
+var idxBegDate, idxEndDate; 	// used to store beg and end of date  
+var extHash, extDate, extMsg;	// used to store extracted messages 
+var gitLogArr = []; 
 
+function parseGit(logArray)	{
+	for (i = 0; i < logArray.length; i++)
+	{
+		// create msg substring 
+		idxBegMsg = logArray[i].indexOf('"') + 1; 
+		idxEndMsg = logArray[i].lastIndexOf('"');
+		extMsg = logArray[i].substring(idxBegMsg, idxEndMsg);
+
+		// create hash substring and find beginning of date 
+		for (j = 0; j < logArray[i].length; j++)
+		{
+			if (logArray[i].charAt(j) === " ")
+			{
+				idxEndHash = j; 
+				idxBegDate = j + 1; 
+				break; 
+			}
+		}
+
+		extHash = logArray[i].substring(0, idxEndHash); 
+
+		// create date substring 
+		idxEndDate = idxBegMsg - 2; 
+		extDate = new Date(logArray[i].substring(idxBegDate, idxEndDate)); 
+
+		// add this log to the git log array 
+		gitLogArr[i] = new GitLog(extHash, extDate, extMsg); 
+	}
+
+	return gitLogArr; 
+}
 //end your code
