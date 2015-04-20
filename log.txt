@@ -1,3 +1,7 @@
 Start: Sun, 19 April 2015 16:26:18 -0400
 End: Sun, 19 Apr 2015 18:46:10 -0400
 Tasks: During this period I completed the functions.js 
+
+Start: Sun, 19 April 2015 20:29:44 -0400
+End: Sun, 19 Apr 2015 22:12:44 -0400
+Tasks: During this period I completed the objects.js and variables.js
