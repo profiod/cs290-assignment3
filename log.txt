@@ -5,3 +5,19 @@ Tasks: During this period I completed the functions.js
 Start: Sun, 19 April 2015 20:29:44 -0400
 End: Sun, 19 Apr 2015 22:24:08 -0400
 Tasks: During this period I completed the objects.js and variables.js
+
+Start: Fri, 24 April 2015 15:09:34 -0400
+End: Fri, 24 April 2015 18:59:33 -0400
+Tasks: Completed two column html layout, sending and receiving the requests including pagination. 
+
+Start: Sat, 25 April 2015 15:02:17 -0400
+End: Sat, 25 April 2015 19:48:49 -0400
+Tasks: Decided how to handle favorites and figured out how to get and set local storage. 
+
+Start: Sun, 26 April 2015 10:12:09 -0400
+End: Sun, 26 April 2015 16:03:52 -0400
+Tasks: Implemented the adding and removing of favorites, beginning on styling with CSS. 
+
+Start: Sun, 26 April 2015 17:08:27 -0400
+End: Sun, 26 April 2015 19:43:55 -0400
+Tasks: Completed styling, testing on the four major browsers, and implemented pagination selection with button. Submitted assignment.
